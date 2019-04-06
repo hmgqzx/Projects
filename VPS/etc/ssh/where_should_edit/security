@@ -1,0 +1,26 @@
+# 更改默认的 22 端口，避免扫描: Port <num>
+Port 31415
+
+# Authentication :
+# 默认 ssh 给你尝试登录的时长，单位是秒；防止穷举密码爆破
+LoginGraceTime 5
+# root 登录，本应设置为 no，偷懒
+PermitRootLogin yes
+# 最大尝试次数
+MaxAuthTries 2
+
+# Change to yes to enable challenge-response passwords (beware issues with
+# some PAM modules and threads)
+# 在配合PAM的时候，Challenge Password会绕过PasswordAuthentication的配置, 需要配置为no
+ChallengeResponseAuthentication no
+
+# PAM 加固
+UsePAM yes
+
+#  the timeout in seconds
+#  After x number of seconds, ssh server will send a message to the client asking for response.
+ClientAliveInterval 120
+
+# 不接受密码; 这一步要在设置好 ssh_key 后才能开，不然就登录不上啦
+PasswordAuthentication no
+
