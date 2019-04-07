@@ -18,6 +18,8 @@ See [粵語審音配詞字庫](https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/)
 
 * `Words(Explanation) / Remarks`: 词汇等
 
+  * 像 `香水, 香味, 香火[2..]香油, 香料` 中的 `[2..]` 是原网页中的内容，指示后面隐藏的词语还有 2 个；不是乱码
+
 * `Sound`: 读音文件；陳京英老师录音，故在尾部加上`_by_can4_ging1_ying1`
 
   > 本校雅禮中國語文研習所前導師`陳京英`老師義務參與本網頁之錄音工作，特此致謝。
