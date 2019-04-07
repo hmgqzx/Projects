@@ -1,18 +1,26 @@
 See [粵語審音配詞字庫](https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/)
 
->本校雅禮中國語文研習所前導師`陳京英`老師義務參與本網頁之錄音工作，特此致謝。
+根据 [粵語審音配詞字庫常用字頻序表](https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/)，抓取高频字的读音、词语、粤拼等信息，并制成 Anki 卡包。
 
 ## apkg 卡片内容
 
 每张卡片含有以下内容：
 
 * `Id`: 解决 Anki 首字段不得重复的问题
+
 * `Ranking`: 字的频序，频次越大排名越前
+
 * `Freq.`: 字的频次，越大说明越常用
+
 * `Characters`: 字
+
 * `Syllable`: 音节（粤拼）
+
 * `Words(Explanation) / Remarks`: 词汇等
+
 * `Sound`: 读音文件；陳京英老师录音，故在尾部加上`_by_can4_ging1_ying1`
+
+  > 本校雅禮中國語文研習所前導師`陳京英`老師義務參與本網頁之錄音工作，特此致謝。
 
 ## 其他说明
 
