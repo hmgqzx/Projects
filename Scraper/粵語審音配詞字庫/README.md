@@ -18,7 +18,7 @@ See [粵語審音配詞字庫](https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/)
 
 * `Words(Explanation) / Remarks`: 词汇等
 
-  * 像 `香水, 香味, 香火[2..]香油, 香料` 中的 `[2..]` 是原网页中的内容，指示后面隐藏的词语还有 2 个；不是乱码
+  * ~~像 `香水, 香味, 香火[2..]香油, 香料` 中的 `[2..]` 是原网页中的内容，指示后面隐藏的词语还有 2 个；不是乱码~~ 已清洗
 
 * `Sound`: 读音文件；陳京英老师录音，故在尾部加上`_by_can4_ging1_ying1`
 
@@ -32,6 +32,8 @@ See [粵語審音配詞字庫](https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/)
 
 * [apkg](https://github.com/hmgqzx/Practical_Pet_Projects/tree/master/Scraper/%E7%B2%B5%E8%AA%9E%E5%AF%A9%E9%9F%B3%E9%85%8D%E8%A9%9E%E5%AD%97%E5%BA%AB/apkg)
 
-## 其他说明
+## Todo
 
-目前完整抓取（包括音频）的只是前 1000 的，后续再抓取 3000、 7000、10000+ 的
+- [x] 目前完整抓取（包括音频）的只是前 1000 的，后续再抓取 3000、 7000、10000+ 的
+- [ ] 导出 7072 字的 apkg
+- [ ] 更新截图
