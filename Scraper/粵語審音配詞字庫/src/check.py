@@ -1,7 +1,7 @@
 import csv
 
-srca='data/7072/RankingChartDetialed-7072.csv'
-srcb='data/RankingChart.csv'
+srca='../data/7072/RankingChartDetailed-7072.csv'
+srcb='../data/RankingChart.csv'
 
 l=[]
 sa=set()
@@ -32,5 +32,5 @@ with open(srca) as f:
     headers = next(fr_csv)
     for row in fr_csv:
         rank,freq,chrct,syllable,word = row
-        if(chrct=='��'):
+        if('�' in chrct or '�' in word):
             print(row)
