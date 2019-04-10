@@ -5,10 +5,10 @@ user_action_data = '../../../data/user_watch_pref.sml'
 music_meta_data = '../../../data/music_meta'
 user_profile_data = '../../../data/user_profile.data'
 
-output_data = '../../../data/merge_base.data'
+merged_data = '../../../data/merged_base.data'
 
 # touch new file: bcz "with open(output_data,'a') as f" below
-with open(output_data,'w') as fa:
+with open(merged_data,'w') as fa:
     pass
 
 # 1. decode music meta data
@@ -56,6 +56,6 @@ with open(user_action_data,'r') as f:
         record = '\001'.join([user_id, item_id, listen_len, listen_moment,
                          user_profile_dict[user_id],
                          item_info_dict[item_id]])
-        with open(output_data,'a') as f_op:
+        with open(merged_data,'a') as f_op:
             f_op.write(record)
             f_op.write('\n')
