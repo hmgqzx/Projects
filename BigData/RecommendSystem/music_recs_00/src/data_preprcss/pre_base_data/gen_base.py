@@ -33,8 +33,7 @@ with open(user_profile_data,'r') as f:
 # print(len(user_profile_dict)) # 110392
 
 
-# 3. decode user action data
-user_action_dict = {} # key:item_id, value: name, desc, total_time, loc, tags
+# 3. decode user action dat
 with open(user_action_data,'r') as f:
     for line in f:
         ss = line.strip().split('\001')
