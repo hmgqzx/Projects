@@ -5,6 +5,12 @@ user_action_data = '../../../data/user_watch_pref.sml'
 music_meta_data = '../../../data/music_meta'
 user_profile_data = '../../../data/user_profile.data'
 
+output_data = '../../../data/merge_base.data'
+
+# touch new file: bcz "with open(output_data,'a') as f" below
+with open(output_data,'w') as fa:
+    pass
+
 # 1. decode music meta data
 item_info_dict = {} # key:item_id, value: name, desc, total_time, loc, tags
 with open(music_meta_data,'r') as f:
@@ -47,7 +53,9 @@ with open(user_action_data,'r') as f:
         if item_id not in item_info_dict:
             continue
         # join 3 tables
-        print('\001'.join([user_id, item_id, listen_len, listen_moment,
-                                                user_profile_dict[user_id],
-                                                item_info_dict[item_id]])
-              )
+        record = '\001'.join([user_id, item_id, listen_len, listen_moment,
+                         user_profile_dict[user_id],
+                         item_info_dict[item_id]])
+        with open(output_data,'a') as f_op:
+            f_op.write(record)
+            f_op.write('\n')
