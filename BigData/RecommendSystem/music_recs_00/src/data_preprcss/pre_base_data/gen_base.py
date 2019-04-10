@@ -31,7 +31,7 @@ with open(user_profile_data,'r') as f:
         if len(ss) != 5:
             continue
         user_id, gender, age, salary, loc = ss
-        user_profile_dict[user_id] = '\001'.join([user_id, gender, age, salary, loc])
+        user_profile_dict[user_id] = '\001'.join([gender, age, salary, loc])
         # print(user_profile_dict)
 
 # see sth
