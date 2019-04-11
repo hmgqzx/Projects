@@ -8,7 +8,7 @@ See [粵語審音配詞字庫](https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/)
 
 * `Id`: 解决 Anki 首字段不得重复的问题
 
-* `Ranking`: 字的频序，频次越大排名越前
+* `Ranking`: 字的频序，排名越前说明越常用。如`的`字，此值为`1`
 
 * `Freq.`: 字的频次，越大说明越常用
 
