@@ -4,8 +4,9 @@ See [粵語審音配詞字庫](https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/)
 
 ## 下载
 
-* [apkg](https://github.com/hmgqzx/Practical_Pet_Projects/tree/master/Scraper/%E7%B2%B5%E8%AA%9E%E5%AF%A9%E9%9F%B3%E9%85%8D%E8%A9%9E%E5%AD%97%E5%BA%AB/apkg)
-* [csv](https://github.com/hmgqzx/Practical_Pet_Projects/tree/master/Scraper/%E7%B2%B5%E8%AA%9E%E5%AF%A9%E9%9F%B3%E9%85%8D%E8%A9%9E%E5%AD%97%E5%BA%AB/data)
+* [apkg](https://github.com/hmgqzx/Practical_Pet_Projects/tree/master/Scraper/%E7%B2%B5%E8%AA%9E%E5%AF%A9%E9%9F%B3%E9%85%8D%E8%A9%9E%E5%AD%97%E5%BA%AB/apkg)：已包含音频文件，不需另外下载导入
+* [爬取得到的数据 - csv 格式](https://github.com/hmgqzx/Practical_Pet_Projects/tree/master/Scraper/%E7%B2%B5%E8%AA%9E%E5%AF%A9%E9%9F%B3%E9%85%8D%E8%A9%9E%E5%AD%97%E5%BA%AB/data)
+* [独立音频文件](https://github.com/hmgqzx/Practical_Pet_Projects/tree/master/Scraper/%E7%B2%B5%E8%AA%9E%E5%AF%A9%E9%9F%B3%E9%85%8D%E8%A9%9E%E5%AD%97%E5%BA%AB/media)
 
 ## apkg 卡片内容
 
