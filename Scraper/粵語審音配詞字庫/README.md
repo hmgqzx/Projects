@@ -34,6 +34,3 @@ See [粵語審音配詞字庫](https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/)
 
 ## Todo
 
-- [x] 目前完整抓取（包括音频）的只是前 1000 的，后续再抓取 3000、 7000、10000+ 的
-- [ ] 导出 7072 字的 apkg
-- [ ] 更新截图
