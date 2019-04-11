@@ -2,6 +2,10 @@ See [粵語審音配詞字庫](https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/)
 
 根据 [粵語審音配詞字庫常用字頻序表](https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/)，抓取高频字的读音、词语、粤拼等信息，并制成 Anki 卡包。
 
+## 下载
+
+* [apkg](https://github.com/hmgqzx/Practical_Pet_Projects/tree/master/Scraper/%E7%B2%B5%E8%AA%9E%E5%AF%A9%E9%9F%B3%E9%85%8D%E8%A9%9E%E5%AD%97%E5%BA%AB/apkg)
+
 ## apkg 卡片内容
 
 每张卡片含有以下内容：
@@ -28,9 +32,6 @@ See [粵語審音配詞字庫](https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/)
 
 ![](screenshot/anki_browser.jpg)
 
-## 下载
-
-* [apkg](https://github.com/hmgqzx/Practical_Pet_Projects/tree/master/Scraper/%E7%B2%B5%E8%AA%9E%E5%AF%A9%E9%9F%B3%E9%85%8D%E8%A9%9E%E5%AD%97%E5%BA%AB/apkg)
 
 ## Todo
 
