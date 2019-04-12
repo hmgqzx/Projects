@@ -28,6 +28,6 @@ for k, vs in u_i_dict.items():
         score += float(listen_len) / float(total_time)  # sum of all times of listen_percent
     user_id, item_id = k.strip().split('_')
     with open(cf_train_f, 'a') as f_cf:
-        record = ','.join([user_id, item_id, str(score)])
-        f_cf.write(record)
+        line = '{},{},{}'.format(user_id, item_id, score)
+        f_cf.write(line)
         f_cf.write('\n')
