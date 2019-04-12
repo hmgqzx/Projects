@@ -1,4 +1,4 @@
-in_file = '../../../data/merged_base.data'
+in_file = '../../../data/music_meta'
 out_file = '../../../data/cb_train.data'
 
 with open(out_file, 'w') as f:
@@ -10,3 +10,4 @@ with open(in_file, 'r') as f_in:
         (user_id, item_id, listen_len, listen_moment,
          gender, age, salary, user_loc,
          name, desc, total_time, item_loc, tags) = ss
+        print(ss)
