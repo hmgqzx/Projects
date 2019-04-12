@@ -7,7 +7,5 @@ with open(out_file, 'w') as f:
 with open(in_file, 'r') as f_in:
     for line in f_in:
         ss = line.strip().split('\001')
-        (user_id, item_id, listen_len, listen_moment,
-         gender, age, salary, user_loc,
-         name, desc, total_time, item_loc, tags) = ss
-        print(ss)
+        (item_id, name, desc, total_time, item_loc, tags) = ss
+        # print(ss)
