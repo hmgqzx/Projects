@@ -18,12 +18,21 @@ RADIO_FOR_NAME = 0.9
 RADIO_FOR_DESC = 0.1
 RADIO_FOR_TAGS = 0.05
 
+# prepare set to memorize item_id has presented
+item_id_set = set()
+
 with open(in_file, 'r') as f_in:
     for line in f_in:
         ss = line.strip().split('\001')
         (user_id, item_id, listen_len, listen_moment,
          gender, age, salary, user_loc,
          name, desc, total_time, item_loc, tags) = ss
+
+        # memorize item_id, if it has presented then drop it
+        if item_id in item_id_set:
+            continue
+        else:
+            item_id_set.add(item_id)
 
         # 对 item 的 name、desc、tag 进行分词，召回关键词
         keyword_dict = {}  # keyword:score
