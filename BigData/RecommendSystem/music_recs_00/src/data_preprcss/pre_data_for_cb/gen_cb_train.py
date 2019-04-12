@@ -25,9 +25,10 @@ with open(in_file, 'r') as f_in:
         # handle `desc` with dict.txt
         for kw_sc in jieba.analyse.extract_tags(desc, withWeight=True):
             (keyword, score) = kw_sc
-            keyword_dict[keyword] = score
             if keyword in keyword_dict:
                 keyword_dict[keyword] += score * RADIO_FOR_DESC
+            else:
+                keyword_dict[keyword] = score * RADIO_FOR_DESC
 
         # print(item_id)
         # print(keyword_dict)
