@@ -57,3 +57,8 @@ with open(in_file, 'r') as f_in:
 
         # print(item_id)
         # print(keyword_dict)
+        with open(out_file, 'a') as f:
+            for keyword, score in keyword_dict.items():
+                line = '{},{},{}'.format(item_id, keyword, score)
+                f.write(line)
+                f.write('\n')
