@@ -1,5 +1,5 @@
-from flask import Flask, request
 import redis
+from flask import Flask, request
 
 app = Flask(__name__)
 
@@ -41,8 +41,24 @@ def index():
         item, score = cb_item_score.strip().split(':')
         rec_set.add(item)
 
+    rec_dict = {}
+    music_meta_data = '../../../data/music_meta'
+    with open(music_meta_data, 'r') as f:
+        for line in f:
+            ss = line.strip().split('\001')
+            if len(ss) != 6:
+                continue
+            # print(line)
+            item_id, name, desc, total_time, loc, tags = ss
+            if item_id in rec_set:
+                rec_dict[item_id] = name
+
+    rec_list = []
+    for k, v in rec_dict.items():
+        line = '{} : {}'.format(k, v)
+        rec_list.append(line)
     # return page
-    ret = '<br/>'.join(list(rec_set))  # flask use HTML rendering, use <br/> to represent a newline
+    ret = '<br/>'.join(rec_list)  # flask use HTML rendering, use <br/> to represent a newline
     return ret
 
 
