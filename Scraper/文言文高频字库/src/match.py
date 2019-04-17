@@ -67,9 +67,43 @@ def extract_quote(meaning):
 
 
 if __name__ == '__main__':
-    pos_meaning_list = split_meaning_text(fake_meaning_text)
-    for pos_meaning in pos_meaning_list:
-        pos = extract_pos(pos_meaning)
-        meaning_list = split_pos_meaning(pos_meaning)
-        for meaning in meaning_list:
-            pass
+    rank_dict = {}
+    with open(ranking_f, 'r') as rank_f:
+        rank_f_csv = csv.reader(rank_f)
+        header = next(rank_f_csv)
+        for row in rank_f_csv:
+            (ranking, char, show_times, _, _) = row
+            rank_dict[char] = [ranking, show_times]
+
+    with open(out_f, 'w') as out_f:
+        note_id = 0
+        out_f_csv = csv.writer(out_f)
+        with open(in_f, 'r') as f:
+            f_csv = csv.reader(f)
+            header = next(f_csv)
+            for row in f_csv:
+                char = row[2]
+                if char not in rank_dict:
+                    continue
+                (ranking, show_times) = rank_dict[char]
+                meaning_text = row[10].replace('\n', '')
+                pron = row[7]
+                pos_meaning_list = split_meaning_text(meaning_text)
+                for pos_meaning in pos_meaning_list:
+                    note_id += 1
+                    pos = extract_pos(pos_meaning)
+                    meanings = split_pos_meaning(pos_meaning)
+                    for meaning in meanings:
+                        index = extract_index(meaning)
+                        gloss = extract_gloss(meaning)
+                        quote = extract_quote(meaning)
+                        if quote == ['', '', '', '']:
+                            continue
+                        (quote_1, quote_2, quote_3, quote_4) = quote
+                        # if quote_4 != '':  # 最多的時候會有 4 句經典的引用
+                        #     print(quote)
+                        row = str(
+                            note_id), show_times, ranking, \
+                            char, pron, pos, index, gloss, \
+                            quote_1, quote_2, quote_3, quote_4
+                        out_f_csv.writerow(row)
