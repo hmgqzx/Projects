@@ -12,28 +12,20 @@ def split_meaning_text(meaning_text):
     :param meaning_text: 詞條釋義文本
     :return pos_meaning_list: 由各個釋義所組成的列表"""
     pos_meaning_list = re.findall(r'\[.][^\[]*', meaning_text)
-    print("pos_meaning_list:")
-    print(pos_meaning_list)
     return pos_meaning_list
 
 
 def extract_pos(pos_meaning):
     pos = re.match(r'\[\w]', pos_meaning).group()
-    print('pos:')
-    print(pos)
     return pos
 
 
 def split_pos_meaning(pos_meaning):
     meanings = re.findall(r'\d[^\d]*', pos_meaning)
     if meanings:
-        print('meanings:')
-        print(meanings)
         return meanings
     else:
         meaning = re.sub(r'\[.]', '', pos_meaning)
-        print('meaning:')
-        print([meaning])
         return [meaning]
 
 
