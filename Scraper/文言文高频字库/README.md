@@ -22,7 +22,9 @@
 
 ### 截图
 
-![]()
+![](screenshots/anki_browser.jpg)
+
+![](screenshots/anki_card.jpg)
 
 
 ## Todo
