@@ -1,4 +1,4 @@
-参照 [古代汉语字頻序表](http://corpus.zhonghuayuwen.org/resources.aspx)，若某字在国语辞典的释义中含有经典引用，则提取所需相关信息导出 csv，并制成 Anki 卡组。
+参照 [古代汉语字頻序表](http://corpus.zhonghuayuwen.org/resources.aspx)，若某字在[国语辞典](https://zh.wikipedia.org/wiki/%E6%95%99%E8%82%B2%E9%83%A8%E5%9C%8B%E8%AA%9E%E8%BE%AD%E5%85%B8)的释义中含有经典引用，则提取所需相关信息导出 csv，并制成 Anki 卡组。
 
 ## 用途
 经典古籍的“语境” + 语料分析的高频字信息 = 高效学习常用的古文字词
